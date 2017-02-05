@@ -1,4 +1,28 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css">
+<link rel="stylesheet" href="main.css">
 
-<product-component></product-component>
+<title>Shop</title>
 
+<div class="page-wrapper">
+    <div class="row">
+        <header-component></header-component>
+    </div>
+
+    <div class="products">
+        <div class="row">
+            <product-list-component></product-list-component>
+        </div>
+    </div>
+
+    <div class="row">
+        <footer-component></footer-component>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js"></script>
 <script src="dist/main.bundle.js"></script>
+<script>
+    $(document).foundation();
+</script>

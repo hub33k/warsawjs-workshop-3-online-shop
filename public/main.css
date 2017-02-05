@@ -1,0 +1,52 @@
+.page-wrapper {
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prodcuts {
+}
+
+.product {
+    height: 350px;
+    border: 2px solid beige;
+}
+
+.product h2 {
+    text-align: center;
+}
+
+.product .product-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.product .product-body img {
+    margin-right: 1rem;
+}
+
+.product footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product button {
+    width: 80%;
+    margin-right: 1rem;
+}
+
+.product input {
+    width: 20%;
+}
+
+.page-footer {
+    margin-top: 2rem;
+    text-align: center;
+}
