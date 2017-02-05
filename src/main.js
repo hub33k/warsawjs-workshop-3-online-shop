@@ -1,3 +1,11 @@
-import file from './file'
+import angular from 'angular';
+import loadModule from './modules/shop-module';
+import ProductComponent from './components/product-component';
 
-file.test();
+let shop = loadModule();
+
+shop.component('productComponent', new ProductComponent());
+
+angular.bootstrap(window.document, [
+    'shop',
+]);
