@@ -1,12 +1,12 @@
 export default class CartService {
     constructor(storageService) {
         this.storageService = storageService;
-        this.cart = this.storageService.read('xxxx') || [];
+        this.cart = this.storageService.read('cart') || [];
     }
 
     addToCart(product) {
         this.cart.push(product);
-        this.storageService.save('xxxx', this.cart);
+        this.storageService.save('cart', this.cart);
     }
 
     getCart() {

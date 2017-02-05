@@ -1,6 +1,6 @@
 let TEMPLATE = `
 <div class="product-list">
-    <product-component ng-repeat="product in $ctrl.products" product-data="product"></product-component>
+    <product-component ng-repeat="product in $ctrl.products track by $index" product-data="product"></product-component>
 </div>
 `;
 
